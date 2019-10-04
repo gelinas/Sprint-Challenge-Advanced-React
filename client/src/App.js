@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 import PlayerList from './components/PlayerList'
+import SearchChart from './components/SearchChart'
 
 import './App.css';
 
@@ -24,10 +25,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <PlayerList data={this.state.data} />
-
-        </header>
+        <SearchChart data={this.state.data} />
+        <PlayerList data={this.state.data} />
       </div>
     );
 
