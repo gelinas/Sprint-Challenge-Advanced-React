@@ -5,6 +5,8 @@ const SearchChart = props => {
 
     const data = props.data.filter(player => player.searches > 7);
 
+    // console.log(JSON.stringify(data));
+
     return (
         <>
         <h2>Players with more than 7 searches</h2>
